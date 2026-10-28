@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4e9e9" />
+  <meta name="description" content="Um convite do Lenon para o Matheus." />
+  <title>Matheus, bora de clássico?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="invite-card" id="inviteCard" aria-labelledby="title">
+      <div class="heart heart-one" aria-hidden="true">♡</div>
+      <div class="heart heart-two" aria-hidden="true">♡</div>
+
+      <header class="topbar">
+        <span class="eyebrow">UM CONVITE DO LENON</span>
+        <span class="ticket-number">29 · 10</span>
+      </header>
+
+      <div class="hero-copy">
+        <p class="to"><strong>MATHEUS</strong></p>
+        <h1 id="title">Um date<br><span>comigo?</span></h1>
+        <p class="intro">Pensei em um primeiro date sem muita cerimônia:<br>um clássico, uma cerveja e a sua companhia.</p>
+      </div>
+
+      <div class="matchup" aria-label="Vasco contra Flamengo">
+        <div class="team team-vasco">
+          <div class="crest crest-vasco"><img src="./vasco.png" alt="Escudo do Vasco"></div>
+          <div><small>MEU TIME</small><strong>VASCO</strong></div>
+        </div>
+        <div class="versus"><span>29 OUT</span><b>♡</b><span>20:00</span></div>
+        <div class="team team-fla">
+          <div class="crest crest-fla"><img src="./flamengo.jpg" alt="Escudo do Flamengo"></div>
+          <div><small>O RIVAL</small><strong>FLAMENGO</strong></div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <span class="detail-icon" aria-hidden="true">⌁</span>
+          <div><small>ONDE</small><strong>Bar Abertura</strong><span>Jardim da Penha</span></div>
+        </div>
+        <div class="detail">
+          <span class="detail-icon" aria-hidden="true">◷</span>
+          <div><small>QUANDO</small><strong>Amanhã, 29/10</strong><span>às 20h</span></div>
+        </div>
+      </div>
+
+      <p class="fine-print">Você leva o seu charme. Eu levo a torcida pelo Vasco. 🤍</p>
+
+      <div class="actions" id="actions">
+        <button class="yes-button" id="yesButton" type="button">
+          <span>Sim, eu adoraria</span><span aria-hidden="true">♡</span>
+        </button>
+        <button class="no-button" id="noButton" type="button">Não vai dar</button>
+      </div>
+
+      <footer>
+        <span>COM CARINHO, LENON</span>
+        <span class="barcode" aria-hidden="true"></span>
+      </footer>
+    </section>
+
+    <section class="success-card" id="successCard" aria-live="polite" aria-hidden="true">
+      <div class="confetti" aria-hidden="true"></div>
+      <figure class="lenon-heart">
+        <svg viewBox="0 0 200 180" role="img" aria-label="Foto do Lenon em formato de coração">
+          <defs>
+            <clipPath id="heartClip">
+              <path d="M100 174C84 158 17 108 17 58C17 24 57 8 81 29L100 40L119 29C143 8 183 24 183 58C183 108 116 158 100 174Z"/>
+            </clipPath>
+          </defs>
+          <image href="./lenon.png" x="8" y="7" width="184" height="184" preserveAspectRatio="xMidYMid slice" clip-path="url(#heartClip)"/>
+          <path class="heart-outline" d="M100 174C84 158 17 108 17 58C17 24 57 8 81 29L100 40L119 29C143 8 183 24 183 58C183 108 116 158 100 174Z"/>
+        </svg>
+      </figure>
+      <span class="photo-caption">TE ESPERO AMANHÃ ♡</span>
+      <p class="eyebrow">PRESENÇA CONFIRMADA</p>
+      <h2>É um date,<br>então!</h2>
+      <p>Te espero amanhã, às 20h, no Bar Abertura. Vou guardar um lugar pertinho de mim — e preparar a torcida pelo Vasco, claro.</p>
+      <div class="mini-ticket"><span>VASCO × FLAMENGO</span><strong>29/10 • 20H</strong></div>
+      <p class="final-note">Agora manda um print pro Lenon<br>antes que ele fique ansioso 👀</p>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
